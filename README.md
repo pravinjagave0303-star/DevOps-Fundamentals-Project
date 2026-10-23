@@ -1,29 +1,88 @@
-# Cloud-Based Linux Server Deployment with GitHub Version Control and Automation
+# DevOps Fundamentals Mini Project
 
-## Project Overview
-This project demonstrates the core fundamentals of DevOps by establishing a secure cloud infrastructure on AWS, configuring a production-ready Ubuntu Linux instance, hosting a localized web application using Apache, and automating core administrative workflows with custom Bash scripting.
+## Project Name
+Cloud-Based Linux Server Deployment with GitHub Version Control and Automation
 
-## AWS Architecture
-* **Virtual Private Cloud (VPC):** Custom isolated cloud network environment.
-* **Subnet:** Public facing network routing zone.
-* **Internet Gateway (IGW):** Attaches live communication routes between the web and our custom VPC.
-* **Security Group:** Built network firewall rules explicitly exposing HTTP port 80 and SSH port 22.
-* **EC2 Instance:** Ubuntu 24.04 LTS instance serving live application traffic.
+## 1. About the Project
+In this project, I deployed a simple website on an AWS Ubuntu server. I used Linux commands to set up the server, installed Apache to host the website, and used GitHub to store my project files.
+I also created Bash scripts to check server health, monitor Apache, and take website backups.
 
-## Installation & Deployment Steps
-1. Configured custom AWS networking topography including VPC, Subnets, and Gateways.
-2. Initialized an EC2 Ubuntu compute block and connected securely via SSH.
-3. Updated repositories and deployed the Apache2 web platform packages.
-4. Cleaned default configurations to mount a custom information landing page.
-5. Programmed automated shell routines to monitor environment stability and manage site backups.
+## 2. Student Details
+- Name: PRAVIN JAGAVE
+- Batch Code:A530 DevOps11
+- Course: DevOps Fundamentals
+- Date: 23 October 2026
 
-## Automation Script Framework
-* `health-check.sh`: Collects live utilization telemetry encompassing CPU constraints, physical memory thresholds, and storage quotas.
-* `apache-monitor.sh`: Checks service reliability states and triggers defensive service restarts if downtime events occur.
-* `backup.sh`: Compresses target web source bundles into persistent archives stamped with active runtime dates.
+## 3. Tools Used
+- AWS EC2 and VPC
+- Ubuntu Linux
+- Apache Web Server
+- Git and GitHub
+- Bash Scripting
+- HTML
 
-## Key Linux Commands Utilized
-* System Maintenance: `sudo apt update && sudo apt upgrade -y`
-* Package Control: `sudo apt install apache2 git -y`
-* Service Supervision: `sudo systemctl status/restart apache2`
-* File Architecture & Rights: `chmod +x`, `mkdir -p`, `cp`
+## 4. Work Completed
+1. Created a VPC and public subnet in AWS.
+2. Configured the Internet Gateway, route table, and security group.
+3. Launched an Ubuntu EC2 instance and connected to it.
+4. Updated Ubuntu and installed Git, Apache, Curl, and Vim.
+5. Created a simple website and hosted it using Apache.
+6. Uploaded the project files to GitHub.
+7. Practised creating a branch, making changes, and merging it into the main branch.
+8. Created a script to check CPU, memory, disk usage, and running processes.
+9. Created a script to check Apache and restart it if it stops.
+10. Created a script to take a backup of the website.
+11. Checked Linux system logs and created a log report.
+
+## 5. Commands I Used
+**Update Ubuntu and install packages**
+```bash
+sudo apt update
+sudo apt upgrade -y
+sudo apt install git apache2 curl vim -y
+```
+
+**Check Apache**
+```bash
+sudo systemctl status apache2
+sudo systemctl restart apache2
+```
+
+**Test the website**
+```bash
+curl http://localhost
+```
+
+**Upload files to GitHub**
+```bash
+git add .
+git commit -m "Update project files"
+git push origin main
+```
+
+**Run the Bash scripts**
+```bash
+./health-check.sh
+./apache-monitor.sh
+./backup.sh
+```
+
+## 6. Project Files
+- `index.html` – Website file
+- `health-check.sh` – Checks server health
+- `apache-monitor.sh` – Checks and restarts Apache if needed
+- `backup.sh` – Creates a website backup
+- `log-report.txt` – Contains the Linux log report
+- `README.md` – Project details and commands
+
+## 7. What I Learned
+During this project, I learned how to:
+- Work with basic Linux commands.
+- Set up an Ubuntu server on AWS.
+- Host a website using Apache.
+- Use Git and GitHub to manage project files.
+- Create and run Bash scripts.
+- Check system logs and troubleshoot basic issues.
+
+## 8. Conclusion
+This project helped me understand the basics of AWS, Linux, Git, GitHub, and Bash scripting. I also got practical experience deploying a website and performing basic server monitoring and backup tasks.
