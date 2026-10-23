@@ -1,0 +1,18 @@
+=========================================
+       LINUX SYSTEM LOG REPORT          
+       Generated: Fri Oct 23 13:54:22 UTC 2026               
+=========================================
+
+1. FAILED LOGIN ATTEMPTS:
+-------------------------
+
+2. SSH LOGIN ACTIVITY (SUCCESSFUL):
+-----------------------------------
+2026-10-23T12:11:09.281145+00:00 ip-10-0-1-163 sshd-session[1113]: Accepted publickey for ubuntu from 13.233.177.3 port 27791 ssh2: ED25519 SHA256:8ocwyrKfqjTdcvKojr1rz1Ma/7JbDIMbXtCu2zY4Mtg
+2026-10-23T13:54:22.559982+00:00 ip-10-0-1-163 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Fundamentals-Project ; USER=root ; COMMAND=/usr/bin/grep -i accepted /var/log/auth.log
+Oct 23 12:11:09 ip-10-0-1-163 sshd-session[1113]: Accepted publickey for ubuntu from 13.233.177.3 port 27791 ssh2: ED25519 SHA256:8ocwyrKfqjTdcvKojr1rz1Ma/7JbDIMbXtCu2zY4Mtg
+
+3. SYSTEM ERRORS & WARNING MESSAGES:
+------------------------------------
+Oct 23 12:07:37 ubuntu kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+=========================================
